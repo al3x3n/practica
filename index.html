@@ -6,12 +6,39 @@
     <meta name="viewport" content="width=device.widht,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+$("document").ready(function(){
+	
+	$(".etiqueta").click(function(){
+		var $att = $(this).attr("id");
+		 /*alert ($att);*/
+	switch ($att) { 
+	case 'etiqueta': 
+		$("#atributos").html("1");
+		break;
+	case 'etiqueta1': 
+		$("#atributos").html("2");
+		break;
+	default:
+		alert ($.Att);
+}
+ 
+   
+ });
+});
+    </script>
 </head>
 <body>
+	<div id="micapa">Capa con algo de texto</div>
+    <button id="miboton">Cambiar el contenido</button>
+    <select>
+		<option id="atributos" value="----">----</option>
+	</select>
 	<nav>
 	<ul>
-		<li>&lt;!--...--&gt;</li>
-		<li>&lt;a&gt;</li>
+		<li><a class="etiqueta" id="etiqueta" href="#">&lt;!--...--&gt;</a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;a&gt;</a></li>
 		<li>&lt;abbr&gt;</li>
 		<li>&lt;address&gt;</li>
 		<li>&lt;area&gt;</li>
@@ -114,5 +141,6 @@
 		<li>&lt;wbr&gt;</li>
 	</ul>
 	</nav>
+	
 </body>
 </html>
