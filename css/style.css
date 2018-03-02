@@ -1,0 +1,32 @@
+body{
+    background-image: url(../image/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    /*border-color: red;
+    border-width: 5px;
+    border-style: solid;*/
+    width: 20%;
+}
+ul{
+	list-style: none;
+}
+li{
+	font-family: 'Eagle Lake', cursive;
+}
+li{
+	display:block; 
+    width:70%; 
+    height:28px; 
+    background-color:#333; 
+    border-left:5px solid #222; 
+    border-right:5px solid #222; 
+    padding-left:10px;
+    color:#bfe1f1;
+}
+li:hover{
+	transform:rotate(4deg); 
+    box-shadow:10px 10px 20px red; 
+    margin-left: 10px;
+}
