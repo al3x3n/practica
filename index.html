@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
 	<title>PRACTICA</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device.widht,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device.widht,initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+	 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	 <script type="text/javascript">
 $("document").ready(function(){
 	
 	$(".etiqueta").click(function(){
@@ -15,29 +15,25 @@ $("document").ready(function(){
 		 /*alert ($att);*/
 	switch ($att) { 
 	case 'etiqueta': 
-		$("#atributos").html("1");
+		$("#atributos").html('<select> <optgroup label="a"> <option value="1"> 1 </option> <optgroup label="b"> <option value="2"> 2 </option> </select>');
 		break;
 	case 'etiqueta1': 
-		$("#atributos").html("2");
+		$("#atributos").html('<select> <optgroup label="c"> <option value="1"> 3 </option> </select>');
 		break;
 	default:
 		alert ($.Att);
 }
  
-   
+	
  });
 });
-    </script>
+	 </script>
 </head>
 <body>
-	<div id="micapa">Capa con algo de texto</div>
-    <button id="miboton">Cambiar el contenido</button>
-    <select>
-		<option id="atributos" value="----">----</option>
-	</select>
+	 
 	<nav>
 	<ul>
-		<li><a class="etiqueta" id="etiqueta" href="#">&lt;!--...--&gt;</a></li>
+		<li><a class="etiqueta" id="etiqueta" href="#">&lt;!--...--&gt;<span class="tooltiptext">Comentario</span></a></li>
 		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;a&gt;</a></li>
 		<li>&lt;abbr&gt;</li>
 		<li>&lt;address&gt;</li>
@@ -141,6 +137,10 @@ $("document").ready(function(){
 		<li>&lt;wbr&gt;</li>
 	</ul>
 	</nav>
-	
+	<div id="atributos">
+	 <select>
+		<option value="-----.ATRIBUTOS.-----">-----.ATRIBUTOS.-----</option>
+	</select>
+	</div>
 </body>
 </html>

@@ -4,10 +4,11 @@ body{
     background-attachment: fixed;
 }
 nav{
-    /*border-color: red;
+    border-color: red;
     border-width: 5px;
-    border-style: solid;*/
+    border-style: solid;
     width: 20%;
+    float: left;
 }
 ul{
 	list-style: none;
@@ -29,4 +30,73 @@ li:hover{
 	transform:rotate(4deg); 
     box-shadow:10px 10px 20px red; 
     margin-left: 10px;
+}
+a:link{
+    text-decoration: none;
+    color:#bfe1f1;
+}
+a:visited{
+    text-decoration: none;
+    color:#bfe1f1;
+}
+a:active{
+    color: red;
+}
+div{
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    width: 20%;
+    margin-left: 500px;
+}
+select{
+    width: 80%;
+    background: #333;
+    border-left:5px solid #222; 
+    border-right:5px solid #222; 
+    color:#bfe1f1; 
+    margin-left: 30px;
+}
+optgroup{
+    background-color: lightcoral;
+    color: black; 
+}
+option{
+    background-color: #333;
+    color: #bfe1f1; 
+}
+select:focus{ outline: none;}
+.etiqueta {
+    position: relative;
+    display: inline-block;
+}
+
+.etiqueta .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.etiqueta .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+.etiqueta:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
