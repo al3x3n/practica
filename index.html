@@ -15,12 +15,12 @@ $("document").ready(function(){
 		 /*alert ($att);*/
 	switch ($att) { 
 	case 'etiqueta': 
-		$("#atributos").html('<select> <optgroup label="a"> <option value="1"> 1 </option> <optgroup label="b"> <option value="2"> 2 </option> </select>');
-		$("#ejemplo").html('<textarea> <!--esto es un Comentario--> </textarea>');
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea disabled><!--esto es un Comentario--></textarea>');
 		break;
 	case 'etiqueta1': 
-		$("#atributos").html('<select> <optgroup label="c"> <option value="1"> 3 </option> </select>');
-		$("#ejemplo").html('<textarea> <a href="url"> nombre </a> </textarea>');
+		$("#atributos").html('<select><optgroup label="download"><option value="nombre">nombre de archivo</option><optgroup label="href"><option value="url">direccion</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option></select>');
+		$("#ejemplo").html('<textarea disabled><a href="url">nombre</a></textarea>');
 		break;
 	default:
 		alert ($.Att);
