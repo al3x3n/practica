@@ -16,9 +16,11 @@ $("document").ready(function(){
 	switch ($att) { 
 	case 'etiqueta': 
 		$("#atributos").html('<select> <optgroup label="a"> <option value="1"> 1 </option> <optgroup label="b"> <option value="2"> 2 </option> </select>');
+		$("#ejemplo").html('<textarea> <!--esto es un Comentario--> </textarea>');
 		break;
 	case 'etiqueta1': 
 		$("#atributos").html('<select> <optgroup label="c"> <option value="1"> 3 </option> </select>');
+		$("#ejemplo").html('<textarea> <a href="url"> nombre </a> </textarea>');
 		break;
 	default:
 		alert ($.Att);
@@ -33,8 +35,8 @@ $("document").ready(function(){
 	 
 	<nav>
 	<ul>
-		<li><a class="etiqueta" id="etiqueta" href="#">&lt;!--...--&gt;<span class="tooltiptext">Comentario</span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;a&gt;</a></li>
+		<li><a class="etiqueta" id="etiqueta" href="#">&lt;!--   --&gt;<span class="tooltiptext">Comentario</span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;a&gt;<span class="tooltiptext">Link</span></a></li>
 		<li>&lt;abbr&gt;</li>
 		<li>&lt;address&gt;</li>
 		<li>&lt;area&gt;</li>
@@ -141,6 +143,9 @@ $("document").ready(function(){
 	 <select>
 		<option value="-----.ATRIBUTOS.-----">-----.ATRIBUTOS.-----</option>
 	</select>
+	</div>
+	<div id="ejemplo">
+		<textarea disabled>                           .......................-"EjEmPlO"-.......................</textarea>
 	</div>
 </body>
 </html>

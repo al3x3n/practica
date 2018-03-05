@@ -42,12 +42,12 @@ a:visited{
 a:active{
     color: red;
 }
-div{
+#atributos{
     border-color: red;
     border-width: 5px;
     border-style: solid;
     width: 20%;
-    margin-left: 500px;
+    margin-left: 650px;
 }
 select{
     width: 80%;
@@ -65,7 +65,9 @@ option{
     background-color: #333;
     color: #bfe1f1; 
 }
-select:focus{ outline: none;}
+select:focus{ 
+    outline: none;
+}
 .etiqueta {
     position: relative;
     display: inline-block;
@@ -99,4 +101,24 @@ select:focus{ outline: none;}
 .etiqueta:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+#ejemplo{
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    width: 70%;
+    margin-top: 10px;
+    float: right;
+    margin-right: 50px;
+}
+textarea{
+    width: 90%;
+    margin-left: 45px;
+    height: 300px;
+    border-radius: 10px;
+    border-left:5px solid #222; 
+    border-right:5px solid #222;
+    background-color:#333;
+    color:#bfe1f1;
+    resize: none;
 }
