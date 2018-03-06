@@ -16,128 +16,158 @@ $("document").ready(function(){
 	switch ($att) { 
 	case 'etiqueta': 
 		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
-		$("#ejemplo").html('<textarea disabled><!--esto es un Comentario--></textarea>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><!--esto es un Comentario--></textarea>');
+		$("#editor").html('<div id="ta_editor"><!--esto es un Comentario--></div>');
 		break;
 	case 'etiqueta1': 
-		$("#atributos").html('<select><optgroup label="download"><option value="nombre">nombre de archivo</option><optgroup label="href"><option value="url">direccion</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option></select>');
-		$("#ejemplo").html('<textarea disabled><a href="url">nombre</a></textarea>');
+		$("#atributos").html('<select><optgroup label="download"><option value="nombre">nombre de archivo</option><optgroup label="href"><option value="url">direccion</option><option value="correo">"mailto:"</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><a href="url">texto</a></textarea>');
+		$("#editor").html('<div id="ta_editor"><a href="https://al3x3n.github.io/" target="_blank">Redes Gesa</a></div>');
 		break;
+	case 'etiqueta2': 
+		$("#atributos").html('<select><optgroup label="title"><option value="descripcion">descripcion</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><abbr title="señor">sr.</abbr></textarea>');
+		$("#editor").html('<div id="ta_editor"><abbr title="señor">sr.</abbr></div>');
+		break;
+		case 'etiqueta3': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><address>informacion de contacto</address></textarea>');
+		$("#editor").html('<div id="ta_editor"><address>informacion de contacto</address></div>');
+		break;
+	case 'etiqueta4': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><article>texto</article></textarea>');
+		$("#editor").html('<div id="ta_editor"><article>texto</article></div>');
+		break;
+	case 'etiqueta5': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><aside>texto</aside></textarea>');
+		$("#editor").html('<div id="ta_editor"><aside>texto</aside></div>');
+		break;
+	case 'etiqueta6': 
+		$("#atributos").html('<select><optgroup label="autoplay"><optgroup label="controls"><optgroup label="loop"><optgroup label="muted"><optgroup label="preload"><option value="auto">auto</option><option value="metadata">metadata</option><option value="none">none</option><optgroup label="src"><option value="url">direccion</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><audio src="audio/LA_CARTA_CUMBIA_ECUATORIANA.mp3">No se puede reproducir el audio</audio></textarea>');
+		$("#editor").html('<div id="ta_editor"><audio src="audio/LA_CARTA_CUMBIA_ECUATORIANA.mp3" controls>No se puede reproducir el audio</audio></div>');
+		break;		
 	default:
-		alert ($.Att);
+		alert ('error');
 }
- 
-	
+
  });
 });
+
+
 	 </script>
 </head>
 <body>
 	 
 	<nav>
+		<form>
 	<ul>
 		<li><a class="etiqueta" id="etiqueta" href="#">&lt;!--   --&gt;<span class="tooltiptext">Comentario</span></a></li>
 		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;a&gt;<span class="tooltiptext">Link</span></a></li>
-		<li>&lt;abbr&gt;</li>
-		<li>&lt;address&gt;</li>
-		<li>&lt;area&gt;</li>
-		<li>&lt;article&gt;</li>
-		<li>&lt;aside&gt;</li>
-		<li>&lt;audio&gt;</li>
-		<li>&lt;b&gt;</li>
-		<li>&lt;base&gt;</li>
-		<li>&lt;bdo&gt;</li>
-		<li>&lt;blackquote&gt;</li>
-		<li>&lt;body&gt;</li>
-		<li>&lt;br&gt;</li>
-		<li>&lt;button&gt;</li>
-		<li>&lt;canvas&gt;</li>
-		<li>&lt;caption&gt;</li>
-		<li>&lt;cite&gt;</li>
-		<li>&lt;code&gt;</li>
-		<li>&lt;col&gt;</li>
-		<li>&lt;colgroup&gt;</li>
-		<li>&lt;datalist&gt;</li>
-		<li>&lt;dd&gt;</li>
-		<li>&lt;del&gt;</li>
-		<li>&lt;detalist&gt;</li>
-		<li>&lt;dfn&gt;</li>
-		<li>&lt;div&gt;</li>
-		<li>&lt;dl&gt;</li>
-		<li>&lt;dt&gt;</li>
-		<li>&lt;em&gt;</li>
-		<li>&lt;embed&gt;</li>
-		<li>&lt;fieldset&gt;</li>
-		<li>&lt;figcaption&gt;</li>
-		<li>&lt;figure&gt;</li>
-		<li>&lt;footer&gt;</li>
-		<li>&lt;form&gt;</li>
-		<li>&lt;h1&gt;to&lt;h6&gt;</</li>
-		<li>&lt;head&gt;</li>
-		<li>&lt;header&gt;</li>
-		<li>&lt;hr&gt;</li>
-		<li>&lt;html&gt;</li>
-		<li>&lt;i&gt;</li>
-		<li>&lt;iframe&gt;</li>
-		<li>&lt;img&gt;</li>
-		<li>&lt;input&gt;</li>
-		<li>&lt;ins&gt;</li>
-		<li>&lt;kbd&gt;</li>
-		<li>&lt;label&gt;</li>
-		<li>&lt;legend&gt;</li>
-		<li>&lt;li&gt;</li>
-		<li>&lt;link&gt;</li>
-		<li>&lt;main&gt;</li>
-		<li>&lt;map&gt;</li>
-		<li>&lt;mark&gt;</li>
-		<li>&lt;meta&gt;</li>
-		<li>&lt;meter&gt;</li>
-		<li>&lt;nav&gt;</li>
-		<li>&lt;noscript&gt;</li>
-		<li>&lt;object&gt;</li>
-		<li>&lt;ol&gt;</li>
-		<li>&lt;optgroup&gt;</li>
-		<li>&lt;option&gt;</li>
-		<li>&lt;output&gt;</li>
-		<li>&lt;p&gt;</li>
-		<li>&lt;param&gt;</li>
-		<li>&lt;picture&gt;</li>
-		<li>&lt;pre&gt;</li>
-		<li>&lt;progress&gt;</li>
-		<li>&lt;q&gt;</li>
-		<li>&lt;rp&gt;</li>
-		<li>&lt;rt&gt;</li>
-		<li>&lt;ruby&gt;</li>
-		<li>&lt;s&gt;</li>
-		<li>&lt;samp&gt;</li>
-		<li>&lt;script&gt;</li>
-		<li>&lt;section&gt;</li>
-		<li>&lt;select&gt;</li>
-		<li>&lt;small&gt;</li>
-		<li>&lt;source&gt;</li>
-		<li>&lt;span&gt;</li>
-		<li>&lt;strong&gt;</li>
-		<li>&lt;style&gt;</li>
-		<li>&lt;sub&gt;</li>
-		<li>&lt;summary&gt;</li>
-		<li>&lt;sup&gt;</li>
-		<li>&lt;table&gt;</li>
-		<li>&lt;tbody&gt;</li>
-		<li>&lt;td&gt;</li>
-		<li>&lt;template&gt;</li>
-		<li>&lt;textarea&gt;</li>
-		<li>&lt;tfoot&gt;</li>
-		<li>&lt;th&gt;</li>
-		<li>&lt;thead&gt;</li>
-		<li>&lt;time&gt;</li>
-		<li>&lt;title&gt;</li>
-		<li>&lt;tr&gt;</li>
-		<li>&lt;track&gt;</li>
-		<li>&lt;u&gt;</li>
-		<li>&lt;ul&gt;</li>
-		<li>&lt;var&gt;</li>
-		<li>&lt;video&gt;</li>
-		<li>&lt;wbr&gt;</li>
+		<li><a class="etiqueta" id="etiqueta2" href="#">&lt;abbr&gt;<span class="tooltiptext">Define una Abreviatura</span></a></li>
+		<li><a class="etiqueta" id="etiqueta3" href="#">&lt;address&gt;<span class="tooltiptext">Informacion de Contacto</span></a></li>
+		<li><a class="etiqueta" id="etiqueta4" href="#">&lt;article&gt;<span class="tooltiptext">Contenido Independiente y Autonomo</span></a></li>
+		<li><a class="etiqueta" id="etiqueta5" href="#">&lt;aside&gt;<span class="tooltiptext">Contenido Aparate</span></a></li>
+		<li><a class="etiqueta" id="etiqueta6" href="#">&lt;audio&gt;<span class="tooltiptext">Audio Formato MP3</span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;b&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;base&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;bdo&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;blackquote&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;body&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;br&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;button&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;canvas&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;caption&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;cite&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;code&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;col&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;colgroup&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;datalist&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;dd&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;del&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;detalist&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;dfn&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;div&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;dl&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;dt&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;em&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;embed&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;fieldset&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;figcaption&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;figure&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;footer&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;form&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;h1&gt;to&lt;h6&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;head&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;header&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;hr&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;html&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;i&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;iframe&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;img&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;input&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;ins&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;kbd&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;label&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;legend&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;li&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;link&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;main&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;map&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;area&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;mark&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;meta&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;meter&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;nav&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;noscript&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;object&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;ol&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;optgroup&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;option&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;output&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;p&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;param&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;picture&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;pre&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;progress&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;q&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;rp&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;rt&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;ruby&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;s&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;samp&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;script&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;section&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;select&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;small&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;source&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;span&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;strong&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;style&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;sub&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;summary&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;sup&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;table&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;tbody&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;td&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;template&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;textarea&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;tfoot&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;th&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;thead&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;time&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;title&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;tr&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;track&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;u&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;ul&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;var&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;video&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;wbr&gt;<span class="tooltiptext"></span></a></li>
 	</ul>
+	</form>
 	</nav>
 	<div id="atributos">
 	 <select>
@@ -145,7 +175,10 @@ $("document").ready(function(){
 	</select>
 	</div>
 	<div id="ejemplo">
-		<textarea disabled>                           .......................-"EjEmPlO"-.......................</textarea>
+		<textarea id="ta_ejemplo" disabled>                           .......................-"EjEmPlO"-.......................</textarea>
+	</div>
+	<div id="editor">
+		<div id="ta_editor"></div>
 	</div>
 </body>
 </html>
