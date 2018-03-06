@@ -4,9 +4,9 @@ body{
     background-attachment: fixed;
 }
 nav{
-    border-color: red;
+    /*border-color: red;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid;*/
     width: 20%;
     float: left;
 }
@@ -43,9 +43,9 @@ a:active{
     color: red;
 }
 #atributos{
-    border-color: red;
+    /*border-color: red;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid;*/
     width: 20%;
     margin-left: 650px;
     position: fixed;
@@ -104,9 +104,9 @@ select:focus{
     opacity: 1;
 }
 #ejemplo{
-    border-color: red;
+    /*border-color: red;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid;*/
     width: 70%;
     margin-top: 50px;
     margin-left: 350px;
@@ -124,9 +124,9 @@ select:focus{
     resize: none;
 }
 #editor{
-    border-color: red;
+    /*border-color: red;
     border-width: 5px;
-    border-style: solid;
+    border-style: solid*/
     width: 70%;
     margin-left: 350px;
     margin-top: 200px;
