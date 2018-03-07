@@ -10,13 +10,13 @@ nav{
     width: 20%;
     float: left;
 }
-ul{
+#menu{
 	list-style: none;
 }
-li{
+#menu li{
 	font-family: 'Eagle Lake', cursive;
 }
-li{
+#menu li{
 	display:block; 
     width:70%; 
     height:28px; 
@@ -26,20 +26,20 @@ li{
     padding-left:10px;
     color:#bfe1f1;
 }
-li:hover{
+#menu li:hover{
 	transform:rotate(4deg); 
     box-shadow:10px 10px 20px red; 
     margin-left: 10px;
 }
-a:link{
+ #menu a:link{
     text-decoration: none;
     color:#bfe1f1;
 }
-a:visited{
+ #menu a:visited{
     text-decoration: none;
     color:#bfe1f1;
 }
-a:active{
+ #menu a:active{
     color: red;
 }
 #atributos{
@@ -122,6 +122,7 @@ select:focus{
     background-color:#333;
     color:#bfe1f1;
     resize: none;
+    padding: 12px;
 }
 #editor{
     /*border-color: red;
@@ -141,4 +142,15 @@ select:focus{
     border-right:5px solid #222;
     background-color:#333;
     color:#bfe1f1;
+    padding: 12px;
+}
+#playlist{
+    list-style: none;
+}
+#playlist li a{
+    color:black;
+    text-decoration: none;
+}
+    #playlist .current-song a{
+    color:blue;
 }
