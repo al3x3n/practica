@@ -148,7 +148,7 @@ select:focus{
     list-style: none;
 }
 #playlist li a{
-    color:black;
+    color:white;
     text-decoration: none;
 }
     #playlist .current-song a{
