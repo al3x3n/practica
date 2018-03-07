@@ -70,9 +70,47 @@ $("document").ready(function(){
 		$("#editor").html('<div id="ta_editor">texto</br>texto</div>');
 		break;
 	case 'etiqueta13': 
+		$("#atributos").html('<select><optgroup label="autofocus"><optgroup label="disabled"><optgroup label="form"><option value="nombre">nombre</option><optgroup label="formaction"><option value="url">url</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option><optgroup label="name"><option value="nombre">nombre</option><optgroup label="type"><option value="button">button</option><option value="reset">reset</option><option value="submit">submit</option><optgroup label="value"><option value="value">texto</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><button type="button">Click!</button></textarea>');
+		$("#editor").html('<div id="ta_editor"><button type="button">Click!</button></div>');
+		$("button").click(function(){
+			alert ('hola  mundo');
+		});
+		break;
+	case 'etiqueta14': 
 		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
-		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled>texto<br>texto</textarea>');
-		$("#editor").html('<div id="ta_editor">texto</br>texto</div>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><canvas></canvas></textarea>');
+		$("#editor").html('<div id="ta_editor"><canvas  width="200" height="100" style="border:1px solid red;"></canvas></div>');
+		break;
+	case 'etiqueta15': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><table><caption>Caja de Ahorro</caption><tr><th>Mes</th><th>Ahorro</th></tr><tr><td>Enero</td><td>$100</td></tr><tr><td>Febrero</td><td>$50</td></tr></table></textarea>');
+		$("#editor").html('<div id="ta_editor"><table><caption>Caja de Ahorro</caption><tr><th>Mes</th><th>Ahorro</th></tr><tr><td>Enero</td><td>$100</td></tr><tr><td>Febrero</td><td>$50</td></tr></table></div>');
+		break;
+	case 'etiqueta16': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><cite>texto</cite></textarea>');
+		$("#editor").html('<div id="ta_editor"><cite>el grito</cite> por Edward Munch. Pintada en 1893.</div>');
+		break;
+	case 'etiqueta17': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><code>texto</code></textarea>');
+		$("#editor").html('<div id="ta_editor"><code>texto</code> texto.</div>');
+		break;
+	case 'etiqueta18': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><colgroup></colgroup></textarea>');
+		$("#editor").html('<div id="ta_editor">mas informacion en la etiqueta col</div>');
+		break;
+	case 'etiqueta19': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><colgroup><col span="2" style="background-color:red"><col style="background-color:yellow"></colgroup></textarea>');
+		$("#editor").html('<div id="ta_editor"><table><colgroup><col span="2" style="background-color:red"><col style="background-color:yellow"></colgroup> <tr> <th>Miembros</th><th>Titulo</th><th>Precio</th></tr><tr><td>3476896</td><td>HTML</td><td>$53</td></tr><tr><td>5869207</td><td>CSS</td><td>$49</td></tr></table></div>');
+		break;
+	case 'etiqueta20': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><input list="exploradores" name="exploradores"><datalist id="exploradores"><option value="Internet Explorer"><option value="Firefox"><option value="Chrome"><option value="Opera"><option value="Safari"></datalist></textarea>');
+		$("#editor").html('<div id="ta_editor"><input list="exploradores" name="exploradores"><datalist id="exploradores"><option value="Internet Explorer"><option value="Firefox"><option value="Chrome"><option value="Opera"><option value="Safari"></datalist></div>');
 		break;		
 	default:
 		alert ('error');

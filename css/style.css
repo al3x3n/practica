@@ -31,11 +31,11 @@ nav{
     box-shadow:10px 10px 20px red; 
     margin-left: 10px;
 }
- #menu a:link{
+#menu a:link{
     text-decoration: none;
     color:#bfe1f1;
 }
- #menu a:visited{
+#menu a:visited{
     text-decoration: none;
     color:#bfe1f1;
 }
@@ -144,13 +144,30 @@ select:focus{
     color:#bfe1f1;
     padding: 12px;
 }
+a:link{
+    text-decoration: none;
+    color:#bfe1f1;
+}
+a:visited{
+    text-decoration: none;
+    color:#bfe1f1;
+}
+a:active{
+    color: red;
+}
 #playlist{
     list-style: none;
 }
 #playlist li a{
-    color:white;
+    color:#bfe1f1;
     text-decoration: none;
 }
     #playlist .current-song a{
     color:blue;
+}
+table, th, td {
+    border: 1px solid white;
+}
+caption{
+    background-color: grey;
 }
