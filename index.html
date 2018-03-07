@@ -20,7 +20,7 @@ $("document").ready(function(){
 		$("#editor").html('<div id="ta_editor"><!--esto es un Comentario--></div>');
 		break;
 	case 'etiqueta1': 
-		$("#atributos").html('<select><optgroup label="download"><option value="nombre">nombre de archivo</option><optgroup label="href"><option value="url">direccion</option><option value="correo">"mailto:"</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option></select>');
+		$("#atributos").html('<select><optgroup label="download"><option value="nombre">nombre de archivo</option><optgroup label="href"><option value="url">url</option><option value="correo">"mailto:"</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option></select>');
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><a href="url">texto</a></textarea>');
 		$("#editor").html('<div id="ta_editor"><a href="https://al3x3n.github.io/" target="_blank">Redes Gesa</a></div>');
 		break;
@@ -45,9 +45,44 @@ $("document").ready(function(){
 		$("#editor").html('<div id="ta_editor"><aside>texto</aside></div>');
 		break;
 	case 'etiqueta6': 
-		$("#atributos").html('<select><optgroup label="autoplay"><optgroup label="controls"><optgroup label="loop"><optgroup label="muted"><optgroup label="preload"><option value="auto">auto</option><option value="metadata">metadata</option><option value="none">none</option><optgroup label="src"><option value="url">direccion</option></select>');
+		$("#atributos").html('<select><optgroup label="autoplay"><optgroup label="controls"><optgroup label="loop"><optgroup label="muted"><optgroup label="preload"><option value="auto">auto</option><option value="metadata">metadata</option><option value="none">none</option><optgroup label="src"><option value="url">url</option></select>');
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><audio src="audio/LA_CARTA_CUMBIA_ECUATORIANA.mp3">No se puede reproducir el audio</audio></textarea>');
 		$("#editor").html('<div id="ta_editor"><audio src="audio/LA_CARTA_CUMBIA_ECUATORIANA.mp3" controls>No se puede reproducir el audio</audio></div>');
+		break;
+	case 'etiqueta7': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><b>texto en negrita</b></textarea>');
+		$("#editor").html('<div id="ta_editor"><b>texto</b> - en negrita</div>');
+		break;
+	case 'etiqueta8': 
+		$("#atributos").html('<select><optgroup label="href"><option value="url">url</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><base href="https://al3x3n.github.io/" target="_blank"></textarea>');
+		$("#editor").html('<textarea id="ta_editor"><head> <base href="https://al3x3n.github.io/" target="_blank"> </head></textarea>');
+		break;
+	case 'etiqueta9': 
+		$("#atributos").html('<select><optgroup label="dir"><option value="ltr">ltr</option><option value="rtl">rtl</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><bdo dir="rtl">texto</bdo></textarea>');
+		$("#editor").html('<div id="ta_editor"><bdo dir="rtl">texto</bdo></div>');
+		break;
+	case 'etiqueta10': 
+		$("#atributos").html('<select><optgroup label="cite"><option value="url">url</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><blackquote cite="url">texto</blackquote></textarea>');
+		$("#editor").html('<div id="ta_editor"><blackquote cite="url">texto</blackquote></div>');
+		break;
+	case 'etiqueta11': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><body>documento</body></textarea>');
+		$("#editor").html('<textarea id="ta_editor"><body>todo el contenido de nuestro documento</body></textarea>');
+		break;
+	case 'etiqueta12': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled>texto<br>texto</textarea>');
+		$("#editor").html('<div id="ta_editor">texto</br>texto</div>');
+		break;
+	case 'etiqueta13': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled>texto<br>texto</textarea>');
+		$("#editor").html('<div id="ta_editor">texto</br>texto</div>');
 		break;		
 	default:
 		alert ('error');
@@ -71,13 +106,13 @@ $("document").ready(function(){
 		<li><a class="etiqueta" id="etiqueta4" href="#">&lt;article&gt;<span class="tooltiptext">Contenido Independiente y Autonomo</span></a></li>
 		<li><a class="etiqueta" id="etiqueta5" href="#">&lt;aside&gt;<span class="tooltiptext">Contenido Aparate</span></a></li>
 		<li><a class="etiqueta" id="etiqueta6" href="#">&lt;audio&gt;<span class="tooltiptext">Audio Formato MP3</span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;b&gt;<span class="tooltiptext"></span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;base&gt;<span class="tooltiptext"></span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;bdo&gt;<span class="tooltiptext"></span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;blackquote&gt;<span class="tooltiptext"></span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;body&gt;<span class="tooltiptext"></span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;br&gt;<span class="tooltiptext"></span></a></li>
-		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;button&gt;<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta7" href="#">&lt;b&gt;<span class="tooltiptext">Texto en Negrita</span></a></li>
+		<li><a class="etiqueta" id="etiqueta8" href="#">&lt;base&gt;<span class="tooltiptext">Especifica URL/Destino a Enlaces</span></a></li>
+		<li><a class="etiqueta" id="etiqueta9" href="#">&lt;bdo&gt;<span class="tooltiptext">Direccion del Texto</span></a></li>
+		<li><a class="etiqueta" id="etiqueta10" href="#">&lt;blackquote&gt;<span class="tooltiptext">Seccion desde otra Fuentes</span></a></li>
+		<li><a class="etiqueta" id="etiqueta11" href="#">&lt;body&gt;<span class="tooltiptext">Cuerpo de Documento</span></a></li>
+		<li><a class="etiqueta" id="etiqueta12" href="#">&lt;br&gt;<span class="tooltiptext">Salto de Linea</span></a></li>
+		<li><a class="etiqueta" id="etiqueta13" href="#">&lt;button&gt;<span class="tooltiptext">Boton</span></a></li>
 		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;canvas&gt;<span class="tooltiptext"></span></a></li>
 		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;caption&gt;<span class="tooltiptext"></span></a></li>
 		<li><a class="etiqueta" id="etiqueta1" href="#">&lt;cite&gt;<span class="tooltiptext"></span></a></li>
