@@ -171,3 +171,6 @@ table, th, td {
 caption{
     background-color: grey;
 }
+#div_ejemplo{
+    border: 1px solid white;
+}

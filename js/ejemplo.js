@@ -111,6 +111,196 @@ $("document").ready(function(){
 		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><input list="exploradores" name="exploradores"><datalist id="exploradores"><option value="Internet Explorer"><option value="Firefox"><option value="Chrome"><option value="Opera"><option value="Safari"></datalist></textarea>');
 		$("#editor").html('<div id="ta_editor"><input list="exploradores" name="exploradores"><datalist id="exploradores"><option value="Internet Explorer"><option value="Firefox"><option value="Chrome"><option value="Opera"><option value="Safari"></datalist></div>');
+		break;
+	case 'etiqueta21': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><del>texto</del></textarea>');
+		$("#editor").html('<div id="ta_editor"><del>texto</del></div>');
+		break;
+	case 'etiqueta22': 
+		$("#atributos").html('<select><optgroup label="open"></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><details>texto</details></textarea>');
+		$("#editor").html('<div id="ta_editor">mas informacion en la etiqueta summary</div>');
+		break;
+	case 'etiqueta23': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><details><summary>texto</summary>texto</details></textarea>');
+		$("#editor").html('<div id="ta_editor"><details><summary>texto</summary>texto</details></div>');
+		break;
+	case 'etiqueta24': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><dfn>texto</dfn>texto</textarea>');
+		$("#editor").html('<div id="ta_editor"><dfn>texto</dfn> texto</div>');
+		break;
+	case 'etiqueta25': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><div>texto</div></textarea>');
+		$("#editor").html('<div id="ta_editor"><div id="div_ejemplo">texto</div></div>');
+		break;
+	case 'etiqueta26': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><dl>texto</dl></textarea>');
+		$("#editor").html('<div id="ta_editor">mas informacion en la etiqueta dt</div>');
+		break;
+	case 'etiqueta27': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><dl><dt>texto</dt></dl></textarea>');
+		$("#editor").html('<div id="ta_editor">mas informacion en la etiqueta dd</div>');
+		break;
+	case 'etiqueta28': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><dl><dt>texto</dt><dd><texto/dd></dl></textarea>');
+		$("#editor").html('<div id="ta_editor"><dl><dt>Cafe</dt><dd>bebida caliente negra</dd><dt>Leche</dt><dd>bebida fria blanca</dd></dl></div>');
+		break;
+	case 'etiqueta29': 
+		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><em>texto</em></textarea>');
+		$("#editor").html('<div id="ta_editor"><em>texto</em></div>');
+		break;
+	case 'etiqueta30': 
+		$("#atributos").html('<select><optgroup label="src"><option value="url">url</option></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><embed src="helloworld.swf"></textarea>');
+		$("#editor").html('<div id="ta_editor"><embed src="giphy.gif"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
+		break;
+	case 'etiqueta': 
+		$("#atributos").html('<select></select>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"></div>');
 		break;		
 	default:
 		alert ('error');
