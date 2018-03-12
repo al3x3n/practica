@@ -174,3 +174,7 @@ caption{
 #div_ejemplo{
     border: 1px solid white;
 }
+img{
+    height: 80%; 
+    width: 80%;
+}
