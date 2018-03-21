@@ -4,13 +4,11 @@ $("document").ready(function(){
 		 /*alert ($att);*/
 	switch ($att) { 
 	case 'etiqueta': 
-		$("#atributos").html('<select><option value="-----NINGUNO-----">-----NINGUNO-----</option></select>');
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><!--esto es un Comentario--></textarea>');
 		$("#editor").html('<div id="ta_editor"><!--esto es un Comentario--></div>');
 		break;
 	case 'etiqueta1': 
-		$("#atributos").html('<select><optgroup label="download"><option value="nombre">nombre de archivo</option><optgroup label="href"><option value="url">url</option><option value="correo">"mailto:"</option><optgroup label="target"><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option><option value="framename">framename</option></select>');
-		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><a href="url">texto</a></textarea>');
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><a href="url" download="nombre de archivo" target="_blank|_self|_parent|_top|framename>texto</a></textarea>');
 		$("#editor").html('<div id="ta_editor"><a href="https://al3x3n.github.io/" target="_blank">Redes Gesa</a></div>');
 		break;
 	case 'etiqueta2': 
@@ -227,8 +225,8 @@ $("document").ready(function(){
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><img src="image/santa2.jpg" alt="santa"></textarea>');
 		$("#editor").html('<div id="ta_editor"><img src="image/santa2.jpg" alt="santa"</div>');
 		break;
-	case 'etiqueta': 
-		$("#atributos").html('<select></select>');
+	case 'etiqueta44': 
+		$("#atributos").html('<select><optgroup label="accept"><option value=""></option></select>');
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 		$("#editor").html('<div id="ta_editor"></div>');
 		break;

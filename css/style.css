@@ -10,13 +10,13 @@ nav{
     width: 20%;
     float: left;
 }
-#menu{
+.menu{
 	list-style: none;
 }
-#menu li{
+.menu li{
 	font-family: 'Eagle Lake', cursive;
 }
-#menu li{
+.menu li{
 	display:block; 
     width:70%; 
     height:28px; 
@@ -26,21 +26,27 @@ nav{
     padding-left:10px;
     color:#bfe1f1;
 }
-#menu li:hover{
+.menu li:hover{
 	transform:rotate(4deg); 
     box-shadow:10px 10px 20px red; 
     margin-left: 10px;
 }
-#menu a:link{
+.menu a:link{
     text-decoration: none;
     color:#bfe1f1;
 }
-#menu a:visited{
+.menu a:visited{
     text-decoration: none;
     color:#bfe1f1;
 }
- #menu a:active{
+.menu a:active{
     color: red;
+}
+.menu li:first-child {
+    background-color: grey;
+    transform: none;
+    margin: 0px;
+    box-shadow:-10px -10px 20px red; 
 }
 #atributos{
     /*border-color: red;
