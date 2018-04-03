@@ -284,7 +284,7 @@ audio/video
 		break;
 	case 'etiqueta63': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><video autoplay controls height="pixeles" width="pixeles" loop muted src="url" poster="url" preload="auto|metadata|none">No se puede reproducir el video</video></textarea>');
-		$("#editor").html('<div id="ta_editor"><video controls src="" id="audioPlayer" height="300px" width="700px">No se puede reproducir el video</video><ul id="playlist"><li class="current-song"><a href="video/Metete_A_La_pista.mp4">Metete a la pista..........3:26</a></li><li><a href="video/Yo_no_soy_como_quieres_que_seas_tu.mp4">Dragon ball super final..........23:07</a></li></ul></div>');
+		$("#editor").html('<div id="ta_editor"><video controls src="" id="audioPlayer" height="300px" width="700px">No se puede reproducir el video</video><ul id="playlist"><li class="current-song"><a href="video/Metete_A_La_pista.mp4">Metete a la pista..........3:26</a></li><li><a href="video/Yo_no_soy_como_quieres_que_seas_tu.mp4">yo no soy..........23:07</a></li></ul></div>');
 		audioPlayer();
 		break;
 /*==========================================================
