@@ -248,7 +248,129 @@ imagen
 		break;
 	case 'etiqueta55': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><canvas height="pixeles width="pixeles"></canvas></textarea>');
-		$("#editor").html('<div id="ta_editor"><canvas  width="200" height="100" style="border:1px solid red;"></canvas></div>');
+		$("#editor").html('<div id="ta_editor"><table><tr><td><canvas id="myCanvas" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas1" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas2" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas9" width="200" height="100" style="border:1px solid red;"></canvas></td></tr><tr><td><canvas id="myCanvas3" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas4" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas5" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas10" width="200" height="100" style="border:1px solid red;"></canvas></td></tr><tr><td><canvas id="myCanvas6" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas7" width="200" height="100" style="border:1px solid red; background-color:white;"></canvas></td><td><canvas id="myCanvas8" width="200" height="100" style="border:1px solid red; background-color:white;"></canvas></td><td><canvas id="myCanvas11" width="200" height="100" style="border:1px solid red;"></canvas></td></tr><tr><td><canvas id="myCanvas12" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas13" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas14" width="200" height="100" style="border:1px solid red;"></canvas></td><td><canvas id="myCanvas15" width="200" height="100" style="border:1px solid red;"></canvas></td></tr></table></div>');
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		ctx.moveTo(0,0);
+		ctx.lineTo(200,100);
+		ctx.strokeStyle="red";
+		ctx.stroke();
+		var canvas = document.getElementById("myCanvas1");
+		var ctx = canvas.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(95,50,40,0,2*Math.PI);
+		ctx.strokeStyle="red";
+		ctx.stroke();
+		var c=document.getElementById("myCanvas2");
+		var ctx=c.getContext("2d");
+		// Create gradient
+		var grd=ctx.createLinearGradient(0,0,200,0);
+		grd.addColorStop(0,"red");
+		grd.addColorStop(1,"white");
+		// Fill with gradient
+		ctx.fillStyle=grd;
+		ctx.fillRect(10,10,150,80);
+		var c=document.getElementById("myCanvas3");
+		var ctx=c.getContext("2d");
+		// Create gradient
+		var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+		grd.addColorStop(0,"red");
+		grd.addColorStop(1,"white");
+		// Fill with gradient
+		ctx.fillStyle = grd;
+		ctx.fillRect(10,10,150,80);
+		var canvas = document.getElementById("myCanvas4");
+		var ctx = canvas.getContext("2d");
+		ctx.font = "30px Arial";
+		ctx.fillStyle="red";
+		ctx.fillText("Hello World",10,50);
+		var canvas = document.getElementById("myCanvas5");
+		var ctx = canvas.getContext("2d");
+		ctx.font = "30px Arial";
+		ctx.strokeStyle="red";
+		ctx.strokeText("Hello World",10,50);
+		var c=document.getElementById("myCanvas6");
+		var ctx=c.getContext("2d");
+		var gradient=ctx.createLinearGradient(0,0,170,0);
+		gradient.addColorStop("0","magenta");
+		gradient.addColorStop("0.5","blue");
+		gradient.addColorStop("1.0","red");
+		// Fill with gradient
+		ctx.strokeStyle=gradient;
+		ctx.lineWidth=5;
+		ctx.strokeRect(10,10,150,80);
+		var c=document.getElementById("myCanvas7");
+		var ctx=c.getContext("2d");
+		ctx.font="30px Verdana";
+		// Create gradient
+		var gradient=ctx.createLinearGradient(0,0,c.width,0);
+		gradient.addColorStop("0","magenta");
+		gradient.addColorStop("0.5","blue");
+		gradient.addColorStop("1.0","red");
+		// Fill with gradient
+		ctx.strokeStyle=gradient;
+		ctx.strokeText("Big smile!",10,50);
+		var c=document.getElementById("myCanvas8");
+		var ctx=c.getContext("2d");
+		ctx.shadowBlur=20;
+		ctx.shadowColor="black";
+		ctx.fillStyle="red";
+		ctx.fillRect(10,10,150,80);
+		var c=document.getElementById("myCanvas9");
+		var ctx=c.getContext("2d");
+		ctx.beginPath();
+		ctx.lineCap="round";
+		ctx.lineWidth=10;
+		ctx.moveTo(20,20);
+		ctx.lineTo(150,20);
+		ctx.strokeStyle="red";
+		ctx.stroke();
+		var c=document.getElementById("myCanvas10");
+		var ctx=c.getContext("2d");
+		ctx.lineWidth=10;
+		ctx.strokeStyle="red";
+		ctx.strokeRect(10,10,80,80);
+		var c=document.getElementById("myCanvas11");
+		var ctx=c.getContext("2d");
+		ctx.strokeStyle="red";
+		ctx.strokeRect(5,5,25,15);
+		ctx.scale(2,2);
+		ctx.strokeRect(5,5,25,15);
+		ctx.scale(2,2);
+		ctx.strokeRect(5,5,25,15);
+		ctx.scale(2,2);
+		ctx.strokeRect(5,5,25,15);
+		var c=document.getElementById("myCanvas12");
+		var ctx=c.getContext("2d");
+		ctx.fillStyle="red";
+		ctx.rotate(20*Math.PI/180);
+		ctx.fillRect(50,20,100,50);
+		var c = document.getElementById("myCanvas13");
+		var ctx = c.getContext("2d");
+		ctx.font = "30px Verdana";
+		// Create gradient
+		var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+		gradient.addColorStop("0", "magenta");
+		gradient.addColorStop("0.5", "blue");
+		gradient.addColorStop("1.0", "red");
+		// Fill with gradient
+		ctx.fillStyle = gradient;
+		ctx.fillText("Big smile!", 10, 30);
+		var c=document.getElementById("myCanvas14");
+		var ctx=c.getContext("2d");
+		ctx.fillStyle="yellow";
+		ctx.fillRect(0,0,250,100)
+		ctx.transform(1,0.5,-0.5,1,30,10);
+		ctx.fillStyle="red";
+		ctx.fillRect(0,0,250,100);
+		ctx.transform(1,0.5,-0.5,1,30,10);
+		ctx.fillStyle="blue";
+		ctx.fillRect(0,0,250,100);
+		var c=document.getElementById("myCanvas15");
+		var ctx=c.getContext("2d");
+		ctx.rect(20,20,150,80);
+		ctx.strokeStyle="red";
+		ctx.stroke();
 		break;
 	case 'etiqueta56': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><figure>contenido</figure></textarea>');
@@ -264,7 +386,7 @@ imagen
 		break;
 	case 'etiqueta59': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><svg width="pixeles" height="pixeles"></svg></textarea>');
-		$("#editor").html('<div id="ta_editor"><svg width="100" height="100" style="border:1px solid red;"></svg></div>');
+		$("#editor").html('<div id="ta_editor"><table><tr><td><svg width="100" height="100" style="border:1px solid red;"><rect width="90" height="60" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><rect x="10" y="10" width="80" height="80" style="fill:red;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><rect x="10" y="10" rx="20" ry="20" width="80" height="80" style="fill:red;stroke:black;stroke-width:5;opacity:0.5" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><ellipse cx="50" cy="50" rx="50" ry="10" style="fill:yellow;stroke:purple;stroke-width:2" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><ellipse cx="50" cy="50" rx="50" ry="10" style="fill:purple" /> <ellipse cx="40" cy="40" rx="40" ry="8" style="fill:lime" /> <ellipse cx="30" cy="30" rx="30" ry="6" style="fill:yellow" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><ellipse cx="50" cy="50" rx="50" ry="10" style="fill:yellow" /> <ellipse cx="50" cy="50" rx="40" ry="5" style="fill:white" /></svg></td></tr><tr><td><svg width="100" height="100" style="border:1px solid red;"><line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" /</svg></td><td><svg width="100" height="100" style="border:1px solid red;"><polygon points="10,10 50,90 60,10" style="fill:lime;stroke:purple;stroke-width:1" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><polygon points="50,10 20,90 90,40 15,40 85,90" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"/></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><polyline points="0,0 20,0 20,20 40,20 40,40 60,40 60,60" style="fill:red;stroke:red;stroke-width:4" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><text x="0" y="15" fill="red">I love SVG!</text></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><text x="0" y="15" fill="red" transform="rotate(30 20,40)">I love SVG</text></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><g fill="none"><path stroke="red" d="M5 20 l215 0" /><path stroke="white" d="M5 40 l215 0" /><path stroke="yellow" d="M5 60 l215 0" /></g></svg></td></tr><tr><td><svg width="100" height="100" style="border:1px solid red;"><g fill="none" stroke="black"> <path stroke-width="2" stroke="red" d="M5 20 l215 0" /> <path stroke-width="4" stroke="red" d="M5 40 l215 0" /> <path stroke-width="6" stroke="red" stroke-linecap="round" d="M5 60 l215 0" /> </g></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><g fill="none" stroke="black" stroke-width="4"> <path stroke-dasharray="5,5" stroke="red" d="M5 20 l215 0" /> <path stroke-dasharray="10,10" stroke="red" d="M5 40 l215 0" /> <path stroke-dasharray="20,10,5,5,5,10" stroke="red" d="M5 60 l215 0" /> </g></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><defs> <filter id="f1" x="0" y="0"> <feGaussianBlur in="SourceGraphic" stdDeviation="15" /> </filter> </defs> <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><defs> <filter id="f2" x="0" y="0" width="200%" height="200%"> <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" /> <feBlend in="SourceGraphic" in2="offOut" mode="normal" /> </filter> </defs> <rect width="70" height="70" stroke="green" stroke-width="3" fill="yellow" filter="url(#f2)" /></td><td><svg width="100" height="100" style="border:1px solid red;"><defs> <filter id="f3" x="0" y="0" width="200%" height="200%"> <feOffset result="offOut" in="SourceAlpha" dx="20" dy="20" /> <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" /> <feBlend in="SourceGraphic" in2="blurOut" mode="normal" /> </filter> </defs> <rect width="70" height="70" stroke="green" stroke-width="3" fill="yellow" filter="url(#f3)" /></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><defs> <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"> <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" /> <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" /> </linearGradient> </defs> <ellipse cx="50" cy="50" rx="45" ry="35" fill="url(#grad1)" /> <text fill="#ffffff" font-size="25" font-family="Verdana" x="23" y="60">SVG</text></svg></td><td><svg width="100" height="100" style="border:1px solid red;"><defs> <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%"> <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" /> <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" /> </radialGradient> </defs> <ellipse cx="50" cy="50" rx="35" ry="45" fill="url(#grad2)" /></svg></td></tr></table></div>');
 		break;
 /*==========================================================
 audio/video
