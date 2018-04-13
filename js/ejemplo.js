@@ -382,7 +382,7 @@ imagen
 		break;
 	case 'etiqueta58': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><picture><source srcset="url" media="(min-width:px)"><img></picture></textarea>');
-		$("#editor").html('<div id="ta_editor"><iframe id="icar" src="picture.html" style="resize:horizontal; overflow:auto;"></iframe></div>');
+		$("#editor").html('<div id="ta_editor"><iframe id="icar" src="picture.html" style="resize:horizontal; overflow:auto;" frameborder=0;></iframe></div>');
 		break;
 	case 'etiqueta59': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><svg width="pixeles" height="pixeles"></svg></textarea>');
@@ -567,6 +567,18 @@ programacion
 	case 'etiqueta98': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><object data="ulr" height="pixeles" width="pixeles" ></object></textarea>');
 		$("#editor").html('<div id="ta_editor"><object data="giphy.gif" height="" width=""></object></div>');
+		break;
+	case 'etiqueta99': 
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled>NOTA:el codigo te lo da  directo de google maps</textarea>');
+		$("#editor").html('<div id="ta_editor"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60160.4833690036!2d-99.02143889941408!3d19.540316511767045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1523568629563" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>');
+		break;
+	case 'etiqueta100': 
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><iframe width="px" height="pixeles" src="urlautoplay=1;loop=1;controls=0" allowfullscreen></iframe></textarea>');
+		$("#editor").html('<div id="ta_editor"><iframe width="400" height="200" src="https://www.youtube.com/embed/8F0xMvBe2Kg" allowfullscreen frameborder=0;></iframe><iframe width="400" height="200" src="https://www.youtube.com/embed/vc-PJPrueXY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>');
+		break;
+	case 'etiqueta101': 
+		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+		$("#editor").html('<div id="ta_editor"><div id="div1_dd" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="image/M01454340315.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31"> </div> <div id="div2_dd" ondrop="drop(event)" ondragover="allowDrop(event)"></div></div>');
 		break;
 	default:
 		alert ('error');
