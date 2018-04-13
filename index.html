@@ -9,10 +9,30 @@
 	 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	 <script type="text/javascript" src="js/ejemplo.js"></script>
 	 <script type="text/javascript" src="js/audio.js"></script>
+	 <script type="text/javascript" src="js/solapa.js"></script>
+	 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	 <script type="text/javascript">
+	 	function allowDrop(ev) {
+		    ev.preventDefault();
+		}
+		function drag(ev) {
+		    ev.dataTransfer.setData("text", ev.target.id);
+		}
+		function drop(ev) {
+		    ev.preventDefault();
+		    var data = ev.dataTransfer.getData("text");
+		    ev.target.appendChild(document.getElementById(data));
+		}
+	 </script>
 </head>
 <body> 
 	<nav>
-		<form>
+	<ul class="tabs">
+		<li><a href="#tab1"><span class="fab fa-html5" style="color:red;"></span><span class="tab-text">HTML</span></a></li>
+		<li><a href="#tab2"><span class="fab fa-css3-alt" style="color:blue;"></span><span class="tab-text">CSS</span></a></li>
+	</ul>
+	</nav>
+	<div class="menu-o" id="tab1">
 	<ul class="menu">
 		<li><p>HTML BASICO</p></li>
 		<li><a class="etiqueta" id="etiqueta" href="#">&lt;!DOCTYPE html&gt;<span class="tooltiptext">Version de HTML (5)</span></a></li>
@@ -150,12 +170,16 @@
 	</ul>
 	<ul class="menu">
 		<li><p>API'S</p></li>	
-		<li><a class="etiqueta" id="etiqueta99" href="#">Google Maps<span class="tooltiptext"></span></a></li>
-		<li><a class="etiqueta" id="etiqueta100" href="#">Youtube<span class="tooltiptext"></span></a></li>		
-		<li><a class="etiqueta" id="etiqueta101" href="#">Drag and Drop<span class="tooltiptext"></span></a></li>
+		<li><a class="etiqueta" id="etiqueta99" href="#">Google Maps<span class="tooltiptext">Aplicacion Google Maps</span></a></li>
+		<li><a class="etiqueta" id="etiqueta100" href="#">Youtube<span class="tooltiptext">Incrustar Video Directo de Youtube</span></a></li>		
+		<li><a class="etiqueta" id="etiqueta101" href="#">Drag and Drop<span class="tooltiptext">Arrastrar y Soltar</span></a></li>
 	</ul>
-		</form>
-	</nav>
+	</div>
+	<div class="menu-o" id="tab2">
+		<ul class="menu">
+			<li>css</li>
+		</ul>
+	</div>
 	<!-- <div id="atributos">
 	 <select>
 		<option value="-----.ATRIBUTOS.-----">-----.ATRIBUTOS.-----</option>
