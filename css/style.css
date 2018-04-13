@@ -4,7 +4,7 @@ body{
     background-attachment: fixed;
     position: relative;
 }
-nav{
+#tab1 ,#tab2{
     /*border-color: red;
     border-width: 5px;
     border-style: solid;*/
@@ -213,4 +213,39 @@ textarea{
 }
 #nav_ejemplo{
     width: auto;
+}
+#div1_dd, #div2_dd {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+nav{
+    width: 150px;
+}
+ul.tabs{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    list-style-type: none;
+    display: flex;
+}
+ul.tabs li{
+    width:50%;
+}
+ul.tabs li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+ul.tabs li a .tab-text{
+    margin-left: 5px;
+}
+.active{
+    background: green;
 }
