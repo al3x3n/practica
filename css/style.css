@@ -76,12 +76,12 @@ option{
 select:focus{ 
     outline: none;
 }
-.etiqueta {
+.etiqueta,.propiedad {
     position: relative;
     display: inline-block;
 }
 
-.etiqueta .tooltiptext {
+.etiqueta .tooltiptext,.propiedad .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: white;
@@ -96,7 +96,7 @@ select:focus{
     opacity: 0;
     transition: opacity 2s;
 }
-.etiqueta .tooltiptext::after {
+.etiqueta .tooltiptext::after,.propiedad .tooltiptext::after{
     content: "";
     position: absolute;
     top: 50%;
@@ -106,7 +106,7 @@ select:focus{
     border-style: solid;
     border-color: transparent white transparent transparent;
 }
-.etiqueta:hover .tooltiptext {
+.etiqueta:hover .tooltiptext,.propiedad:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
