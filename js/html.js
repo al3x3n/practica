@@ -574,7 +574,7 @@ programacion
 		break;
 	case 'etiqueta100': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled><iframe width="px" height="pixeles" src="urlautoplay=1;loop=1;controls=0" allowfullscreen></iframe></textarea>');
-		$("#editor").html('<div id="ta_editor"><iframe width="400" height="200" src="https://www.youtube.com/embed/8F0xMvBe2Kg" allowfullscreen frameborder=0;></iframe><iframe width="400" height="200" src="https://www.youtube.com/embed/vc-PJPrueXY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>');
+		$("#editor").html('<div id="ta_editor"><iframe width="400" height="200" src="https://www.youtube.com/embed/8F0xMvBe2Kg" allowfullscreen frameborder=0;></iframe><iframe width="400" height="200" src="https://www.youtube.com/embed/eD-z7HkX5so?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>');
 		break;
 	case 'etiqueta101': 
 		$("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
