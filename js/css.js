@@ -2,12 +2,12 @@ $(document).ready(function(){
 	$(".propiedad").click(function(){
 		var $att = $(this).attr("id");
 		switch($att) {
-			case 'propiedad':
-			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled>align-content: stretch|center|flex-start|flex-end|space-between|space-around;</textarea>');
-				$("#editor").html('<div id="ta_editor"><div><input type="radio" name="option" value="stretch" class="option">stretch<input type="radio" name="option" value="center" class="option">center</div></div>');
+			case 'propiedad':7
+			    $("#ejemplo").html('<div id="border_ejemplo" style="overflow:auto;">align-content: stretch|center|flex-start|flex-end|space-between|space-around;<hr>contenedor principal{<br><p>width:70px;</p><p>height:300px;</p><p>border:1px solid red;</p><p>display:flex;</p><p>flex-wrap:wrap;</p><p>align-content:"";</p>}</div>');
+				$("#botonera").html('<div id="bot_opciones"><div id="list_opciones"><input type="radio" name="option" value="stretch" class="option" id="stretch"><label for="stretch">stretch</label><input type="radio" name="option" value="center" class="option" id="center"><label for="center">center</label><input type="radio" name="option" value="flex-start" class="option" id="flex-start"><label for="flex-start">flex-start</label><input type="radio" name="option" value="flex-end" class="option" id="flex-end"><label for="flex-end">flex-end</label><input type="radio" name="option" value="space-between" class="option" id="space-between"><label for="space-between">space-between</label><input type="radio" name="option" value="space-around" class="option" id="space-around"><label for="space-around">space-around</label></div></div>');
 				$(".option").click(function(){
 					var $cambio = $(this).attr("value");
-					alert($cambio);
+					// alert($cambio);
 					$("#editor").html('<div id="ta_editor"><div id="main" style="width:70px; height:300px; border:1px solid red; display:flex; flex-wrap:wrap; align-content:'+$cambio+';"><div style="background-color:coral; width:70px; height:70px;"></div><div style="background-color:lightblue; width:70px; height:70px;"></div><div style="background-color:pink; width:70px; height:70px;"></div></div></div>');
 
 					// switch($cambio){
