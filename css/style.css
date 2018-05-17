@@ -130,15 +130,14 @@ select:focus{
     color:white;
     resize: none;
     padding: 12px;
-   
 }
 #editor{
     /*border-color: red;
     border-width: 5px;
-    border-style: solid*/
+    border-style: solid;*/
     width: 70%;
     margin-left: 350px;
-    margin-top: 200px;
+    margin-top: 278px;
     position: fixed;
     z-index: 2;
 }
@@ -149,7 +148,7 @@ select:focus{
     border-radius: 10px;
     border-left:5px solid white; 
     border-right:5px solid white;
-    /*background-color:;*/
+    /*background-color:#333;*/
     color:white;
     padding: 12px;
     z-index: 3;
@@ -248,4 +247,81 @@ ul.tabs li a .tab-text{
 }
 .active{
     background: green;
+}
+#botonera{
+    /*border-color: red;
+    border-width: 5px;
+    border-style: solid;*/
+    width: 70%;
+    margin-left: 350px;
+    margin-top: 200px;
+    position: fixed;
+    z-index: 2;
+}
+#bot_opciones{
+    width: 90%;
+    margin-left: 45px;
+    height: 50px;
+    border-radius: 10px;
+    border:5px solid white; 
+    /*border-right:5px solid white;*/
+    /*background-color:#333;*/
+    color:white;
+    padding: 12px;
+    z-index: 3;
+}
+#list_opciones{
+    padding: 15px;
+    text-align: center;
+}
+#list_opciones input[type="radio"]{
+    display: none;
+}
+#list_opciones label{
+    color: white;
+    padding: 5px 15px 5px 30px;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#list_opciones label:hover{
+    color:red;
+}
+#list_opciones label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border:3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+#list_opciones label:hover:before{
+    border:3px solid red;
+}
+#list_opciones input[type="radio"]:checked + label{
+    color: green;
+}
+#list_opciones input[type="radio"]:checked + label:before{
+    border:3px solid green;
+    background:radial-gradient(white,green,green);
+}
+#border_ejemplo{
+    width: 90%;
+    margin-left: 45px;
+    height: 100px;
+    border-radius: 10px;
+    border:5px solid white; 
+    /*background-color:#333;*/
+    color:white;
+    resize: none;
+    padding: 12px;
+}
+#border_ejemplo p{
+    text-indent:50px;
+    line-height: 0px;
 }
