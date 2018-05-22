@@ -11,15 +11,14 @@ body{
     width: 20%;
     float: left;
 }
-.menu{
+.menu,.menu2{
 	list-style: none;
 }
-.menu li{
+.menu li,.menu2 li{
 	font-family: 'Eagle Lake', cursive;
 }
-.menu li{
-	display:block; 
-    width:70%; 
+.menu li,.menu2 li{
+	display:block;  
     height:28px; 
     background-color:#333; 
     border-left:5px solid #222; 
@@ -27,23 +26,29 @@ body{
     padding-left:10px;
     color:#bfe1f1;
 }
-.menu li:hover{
+.menu li{
+  width: 70%;
+}
+.menu2 li{
+  width: 120%;
+}
+.menu li:hover,.menu2 li:hover{
 	transform:rotate(4deg); 
     box-shadow:10px 10px 20px red; 
     margin-left: 10px;
 }
-.menu a:link{
+.menu a:link,.menu2 a:link{
     text-decoration: none;
     color:#bfe1f1;
 }
-.menu a:visited{
-    text-decoration: none;
+/*.menu a:visited{
     color:#bfe1f1;
-}
-.menu a:active{
+    background: red;
+}*/
+.menu a:active,.menu2 a:active{
     color: red;
 }
-.menu li:first-child {
+.menu li:first-child,.menu2 li:first-child {
     background-color: grey;
     transform: none;
     margin: 0px;
