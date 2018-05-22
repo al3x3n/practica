@@ -1,42 +1,39 @@
 $(document).ready(function(){
 	$(".propiedad").click(function(){
 		var $att = $(this).attr("id");
+		$("#editor").html('<div id="ta_editor"></div>')
 		switch($att) {
-			case 'propiedad':7
-			    $("#ejemplo").html('<div id="border_ejemplo" style="overflow:auto;">align-content: stretch|center|flex-start|flex-end|space-between|space-around;<hr>contenedor principal{<br><p>width:70px;</p><p>height:300px;</p><p>border:1px solid red;</p><p>display:flex;</p><p>flex-wrap:wrap;</p><p>align-content:"";</p>}</div>');
+			case 'propiedad':
+			    $("#ejemplo").html('<div id="border_ejemplo" style="overflow:auto;">align-content: stretch|center|flex-start|flex-end|space-between|space-around;<hr>contenedor principal {<br><p>width:70px;</p><p>height:300px;</p><p>border:1px solid red;</p><p>display:flex;</p><p>flex-wrap:wrap;</p><p>align-content:"";</p>}</div>');
 				$("#botonera").html('<div id="bot_opciones"><div id="list_opciones"><input type="radio" name="option" value="stretch" class="option" id="stretch"><label for="stretch">stretch</label><input type="radio" name="option" value="center" class="option" id="center"><label for="center">center</label><input type="radio" name="option" value="flex-start" class="option" id="flex-start"><label for="flex-start">flex-start</label><input type="radio" name="option" value="flex-end" class="option" id="flex-end"><label for="flex-end">flex-end</label><input type="radio" name="option" value="space-between" class="option" id="space-between"><label for="space-between">space-between</label><input type="radio" name="option" value="space-around" class="option" id="space-around"><label for="space-around">space-around</label></div></div>');
 				$(".option").click(function(){
 					var $cambio = $(this).attr("value");
-					// alert($cambio);
-					$("#editor").html('<div id="ta_editor"><div id="main" style="width:70px; height:300px; border:1px solid red; display:flex; flex-wrap:wrap; align-content:'+$cambio+';"><div style="background-color:coral; width:70px; height:70px;"></div><div style="background-color:lightblue; width:70px; height:70px;"></div><div style="background-color:pink; width:70px; height:70px;"></div></div></div>');
-
-					// switch($cambio){
-					// 	case  '1':
-					// 		var $1 = 'stretch';
-					// 		alert($1);
-					// 		$("#editor").html('<div id="ta_editor"><div id="main" style="width:70px; height:300px; border:1px solid red; display:flex; flex-wrap:wrap; align-content:stretch;"><div style="background-color:coral; width:70px; height:70px;"></div><div style="background-color:lightblue; width:70px; height:70px;"></div><div style="background-color:pink; width:70px; height:70px;"></div></div></div>');
-					// 		break;
-					// 	case '2':
-					// 		var $2 = 'center';
-					// 		alert($2);
-					// 		$("#editor").html('<div id="ta_editor"><div id="main" style="width:70px; height:300px; border:1px solid red; display:flex; flex-wrap:wrap; align-content:center;"><div style="background-color:coral; width:70px; height:70px;"></div><div style="background-color:lightblue; width:70px; height:70px;"></div><div style="background-color:pink; width:70px; height:70px;"></div></div></div>');
-					// 		break;
-					// 	default:
-					// 		alert('error');
-					// }			    	
+					$("#editor").html('<div id="ta_editor"><div id="main" style="width:70px; height:300px; border:1px solid red; display:flex; flex-wrap:wrap; align-content:'+$cambio+';"><div style="background-color:coral; width:70px; height:70px;"></div><div style="background-color:lightblue; width:70px; height:70px;"></div><div style="background-color:pink; width:70px; height:70px;"></div></div></div>');			    	
 			    });
 				break;
 			case 'propiedad1':
-			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
-				$("#editor").html('<div id="ta_editor"></div>');
+			    $("#ejemplo").html('<div id="border_ejemplo" style="overflow:auto;">align-items: stretch|center|flex-start|flex-end|baseline;<hr>contenedor principal {<br><p>width:220px;</p><p>height:300px;</p><p>border:1px solid red;</p><p>display:flex;</p><p>align-items:"";</p>}</div>');
+				$("#botonera").html('<div id="bot_opciones"><div id="list_opciones"><input type="radio" name="option" value="stretch" class="option" id="stretch"><label for="stretch">stretch</label><input type="radio" name="option" value="center" class="option" id="center"><label for="center">center</label><input type="radio" name="option" value="flex-start" class="option" id="flex-start"><label for="flex-start">flex-start</label><input type="radio" name="option" value="flex-end" class="option" id="flex-end"><label for="flex-end">flex-end</label></div></div>');
+				$(".option").click(function(){
+					var $cambio = $(this).attr("value");
+					$("#editor").html('<div id="ta_editor"><div id="main" style="width:220px;height:300px;border:1px solid red;display:flex;align-items:'+$cambio+';"><div style="background-color:crimson;flex:1;">ROJO</div><div style="background-color:lightblue;flex:1;">AZUL</div><div style="background-color:lightgreen;flex:1;">VERDE</div></div></div>');			    	
+			    });
 				break;
 			case 'propiedad2':
-			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
-				$("#editor").html('<div id="ta_editor"></div>');
+			    $("#ejemplo").html('<div id="border_ejemplo" style="overflow:auto;">align-self: stretch|center|flex-start|flex-end;<hr>contenedor a mover {<br><p>align-self:"";</p>}</div>');
+				$("#botonera").html('<div id="bot_opciones"><div id="list_opciones"><input type="radio" name="option" value="stretch" class="option" id="stretch"><label for="stretch">stretch</label><input type="radio" name="option" value="center" class="option" id="center"><label for="center">center</label><input type="radio" name="option" value="flex-start" class="option" id="flex-start"><label for="flex-start">flex-start</label><input type="radio" name="option" value="flex-end" class="option" id="flex-end"><label for="flex-end">flex-end</label></div></div>');
+				$(".option").click(function(){
+					var $cambio = $(this).attr("value");
+					$("#editor").html('<div id="ta_editor"><div id="main" style="width:220px;height:300px;border:1px solid red;display:flex;align-items:flex-start;"><div style="background-color:crimson;flex:1;">ROJO</div><div style="background-color:lightblue;flex:1;align-self:'+$cambio+';" id="myBlueDiv">AZUL</div><div style="background-color:lightgreen;flex:1;">VERDE</div></div></div>');			    	
+			    });
 				break;
 			case 'propiedad3':
-			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
-				$("#editor").html('<div id="ta_editor"></div>');
+			    $("#ejemplo").html('<div id="border_ejemplo" style="overflow:auto;">all: initial|inherit|unset;<hr>elemento a afectar {<br><p>background-color:yellow;</p><p>color:red;</p><p>all:"";</p>}</div>');
+				$("#botonera").html('<div id="bot_opciones"><div id="list_opciones"><input type="radio" name="option" value="initial" class="option" id="initial"><label for="initial">initial</label><input type="radio" name="option" value="inherit" class="option" id="inherit"><label for="inherit">inherit</label></div></div>');
+				$(".option").click(function(){
+					var $cambio = $(this).attr("value");
+					$("#editor").html('<div id="ta_editor"><div style="font-size:small;color:blue;"><p>sin propiedad all:</p><div id="ex1" style="background-color:yellow;color:red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div><p>con propiedad all:</p><div id="ex2" style="background-color:yellow;color:red;all:'+$cambio+';">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div></div></div>');			    	
+			    });
 				break;
 			case 'propiedad4':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
@@ -426,211 +423,499 @@ $(document).ready(function(){
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad101':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad102':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad103':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad104':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad105':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad106':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad107':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad108':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad109':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad110':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad111':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad112':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad113':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad114':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad115':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad116':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad117':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad118':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad119':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad120':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad121':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad122':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad123':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad124':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad125':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad126':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad127':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad128':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad129':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad130':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad131':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad132':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad133':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad134':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad135':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad136':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad137':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad138':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad139':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad140':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad141':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad142':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad143':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad144':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad145':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad146':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad147':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad148':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad149':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad150':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad151':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
-			case 'propiedad':
+			case 'propiedad152':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad153':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad154':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad155':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad156':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad157':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad158':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad159':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad160':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad161':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad162':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad163':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad164':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad165':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad166':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad167':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad168':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad169':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad170':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad171':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad172':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad173':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad174':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad175':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad176':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad177':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad178':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad179':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad180':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad181':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad182':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad183':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad184':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad185':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad186':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad187':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad188':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad189':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad190':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad191':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad192':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad193':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad194':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad195':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad196':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad197':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad198':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad199':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad200':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad201':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad202':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad203':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad204':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad205':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad206':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad207':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad208':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad209':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad210':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad211':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad212':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad213':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad214':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad215':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad216':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad217':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad218':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad219':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad220':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad221':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad222':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad223':
+			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
+				$("#editor").html('<div id="ta_editor" style=""></div>');
+				break;
+			case 'propiedad224':
 			    $("#ejemplo").html('<textarea id="ta_ejemplo" disabled></textarea>');
 				$("#editor").html('<div id="ta_editor" style=""></div>');
 				break;
